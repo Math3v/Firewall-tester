@@ -3,6 +3,9 @@
 BIN="./pdscli "		# Specify binary
 TCDIR="./testcases"	# Directory with test files
 TCFILE="test"		# Test-case file with command to binary
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m'
 
 # Enable debug
 #set -x
@@ -28,7 +31,7 @@ for file in `find ./testcases -type f -iname "$TCFILE*"`; do
 	$BIN$COMMAND > /dev/null 2>&1
 	R="$?"
 	if [ $R != "0" ] && [ "$RESULT" == "invalid" ]; then
-		echo "OK"
+		printf "${GREEN}OK${NC}\n"
 		continue
 	elif [ $R != "0" ]; then
 		echo "Command returned $R"
@@ -42,11 +45,11 @@ for file in `find ./testcases -type f -iname "$TCFILE*"`; do
 
 	# Check the result
 	if [ "$RESULT" == "pass" ] && [ "$?" == $R ]; then
-		echo "OK"
+		printf "${GREEN}OK${NC}\n"
 	elif [ "$RESULT" == "fail" ] && [ "$?" != $R ]; then
-		echo "OK"
+		printf "${GREEN}OK${NC}\n"
 	else
-		echo "FAILED"
+		printf "${RED}FAILED${NC}\n"
 	fi
 
 	# Clean rules for other tests
