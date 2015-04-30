@@ -1,0 +1,5 @@
+Deny DNS Lookup
+-a 20 deny udp from any to any src-port 53
+nslookup -timeout=2 facebook.com
+FAIL
+-d 20
