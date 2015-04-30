@@ -14,5 +14,7 @@ Command to delete added rule
 
 ### Test results
 PASS - executed command should return 0
+
 FAIL - executed command shold NOT return 0
+
 INVALID - invalid rule added
