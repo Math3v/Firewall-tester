@@ -61,3 +61,6 @@ for file in `find ./testcases -type f -iname "$TCFILE*"`; do
 	fi
 
 done 
+
+# Remove garbage files
+rm -f index.html*
