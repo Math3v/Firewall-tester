@@ -12,6 +12,8 @@ Result of test (PASS|FAIL|INVALID)
 
 Command to delete added rule
 
+NO NEW LINE AT THE END
+
 ### Test results
 PASS - executed command should return 0
 
