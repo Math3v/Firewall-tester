@@ -1,0 +1,5 @@
+Ping allowed
+-a 50 allow icmp from any to any
+ping -w 2 8.8.8.8
+PASS
+-d 50

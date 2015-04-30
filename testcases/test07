@@ -1,0 +1,5 @@
+Ping denied
+-a 60 deny icmp from any to any
+ping -w 2 8.8.8.8
+FAIL
+-d 60
