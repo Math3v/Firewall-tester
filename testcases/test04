@@ -1,0 +1,5 @@
+Allow TCP from IP address
+-a 30 allow tcp from 66.155.40.249 to any
+wget wordpress.org
+PASS
+-d 30
