@@ -1,0 +1,5 @@
+Ping denied from IP address
+-a 70 deny icmp from 173.252.120.6 to any
+ping -w 2 173.252.120.6
+FAIL
+-d 70
