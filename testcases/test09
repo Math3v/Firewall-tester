@@ -1,5 +1,5 @@
 FTP denied from IP address
 -a 80 deny tcp from 198.116.65.45 to any src-port 21
-wget -t 3 ftp://ftp.hq.nasa.gov/robots.txt
+wget -T 2 -t 3 ftp://ftp.hq.nasa.gov/robots.txt
 FAIL
 -d 80

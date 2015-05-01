@@ -1,5 +1,5 @@
 Deny all ip traffic
 -a 10 deny ip from any to any
-wget -t 3 facebook.com
+wget -T 2 -t 3 facebook.com
 FAIL
 -d 10
