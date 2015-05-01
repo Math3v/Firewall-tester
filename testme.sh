@@ -10,7 +10,7 @@ NC='\033[0m'
 # Enable debug
 #set -x
 
-for file in `find ./testcases -type f -iname "$TCFILE*"`; do
+for file in `find "$TCDIR" -type f -iname "$TCFILE*" | sort`; do
 
 	# Check for test-case file structure
 	if [ `wc -l $file | cut -d ' ' -f1` != 4 ]; then
