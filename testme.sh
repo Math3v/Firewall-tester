@@ -44,9 +44,9 @@ for file in `find ./testcases -type f -iname "$TCFILE*"`; do
 	R="$?"
 
 	# Check the result
-	if [ "$RESULT" == "pass" ] && [ "$?" == $R ]; then
+	if [ "$RESULT" == "pass" ] && [ "0" == $R ]; then
 		printf "${GREEN}OK${NC}\n"
-	elif [ "$RESULT" == "fail" ] && [ "$?" != $R ]; then
+	elif [ "$RESULT" == "fail" ] && [ "0" != $R ]; then
 		printf "${GREEN}OK${NC}\n"
 	else
 		printf "${RED}FAILED${NC}\n"
