@@ -25,7 +25,7 @@ for file in `find "$TCDIR" -type f -iname "$TCFILE*" | sort`; do
 	RESULT=`sed '4q;d' $file | tr '[:upper:]' '[:lower:]'`
 	CLEANUP=`sed '5q;d' $file`
 
-	echo -n "Test: $NAME..."
+	echo -n "$(basename $file): $NAME..."
 
 	# Prepare kernel module
 	$BIN$COMMAND > /dev/null 2>&1
