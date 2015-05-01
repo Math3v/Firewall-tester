@@ -1,0 +1,5 @@
+Command with invalid IP address
+-a 10 alow tcp from 1111.222.333.444 to any
+NO OPERATION
+INVALID
+NO OPERATION

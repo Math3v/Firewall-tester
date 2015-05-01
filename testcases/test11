@@ -1,0 +1,5 @@
+Rule with invalid protocol
+-a 10 alow ftp from any to any
+NO OPERATION
+INVALID
+NO OPERATION
