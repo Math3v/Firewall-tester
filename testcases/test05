@@ -1,5 +1,5 @@
 Deny IP from IP address
 -a 40 deny tcp from 66.155.40.249 to any
-wget -t 3 wordpress.org
+wget -t 3 66.155.40.249
 FAIL
 -d 40
